@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Application main -->
+    <string name="app_name">Weather</string>
+
+    <!-- Network messages -->
+    <string name="data_refreshed">Weather data refreshed</string>
+    <string name="no_network">No network connectivity</string>
+    <string name="request_timeout">Request timeout</string>
+    <string name="transfer_failed">Could not get data</string>
+
+    <!-- App parameters -->
+    <integer name="reload_timeout_minutes">5</integer>
+    <string name="api_base_url">http://api.openweathermap.org/data/2.5/</string>
+    <string name="query_units">metric</string>
+    <string name="query_app_id">09fb3c997458c61b40a3553ebc1d70c1</string>
+    <string name="query_city_ids">2193733,2190324,2191562,6230919,2208032,6241325,963516,2181742,6204696,2206854,2181133,2190224,2188164,2189529,6230919,6243926,6235764,2188874,2206890</string>
+    <bool name="portrait_only">true</bool>
+
+    <!-- Layout text -->
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="sunset">Sunset</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="min">"Min %1$s"</string>
+    <string name="max">"Max %1$s"</string>
+
+</resources>

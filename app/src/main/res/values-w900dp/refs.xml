@@ -1,0 +1,3 @@
+<resources>
+    <item name="weather_list" type="layout">@layout/weather_list_twopane</item>
+</resources>

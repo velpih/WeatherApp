@@ -1,0 +1,137 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/weather_degrees"
+            style="@style/Text.LargeDial"
+            tools:text="19°"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/weather_country"
+            style="@style/Text.Small"
+            tools:text="New Zealand"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/weather_degrees"/>
+
+        <TextView
+            android:id="@+id/weather_city"
+            style="@style/Text.Large"
+            tools:text="Auckland"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/weather_country"/>
+
+        <TextView
+            android:id="@+id/weather_max_min"
+            style="@style/Text.Small"
+            android:padding="@dimen/text_padding"
+            tools:text="Max xx | Min xx"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/weather_degrees"/>
+
+        <TextView
+            android:id="@+id/weather_description"
+            style="@style/Text.Medium"
+            android:textStyle="bold"
+            tools:text="Sky is clear"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/weather_max_min"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:paddingLeft="@dimen/row_padding"
+        android:paddingRight="@dimen/row_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Text.Small"
+                android:text="@string/sunrise"
+                android:padding="@dimen/text_padding" />
+
+            <TextView
+                android:id="@+id/weather_sunrise"
+                style="@style/Text.Medium"
+                android:textStyle="bold"
+                tools:text="6:00am"
+                android:padding="@dimen/text_padding"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Text.Small"
+                android:text="@string/sunset"
+                android:padding="@dimen/text_padding" />
+
+            <TextView
+                android:id="@+id/weather_sunset"
+                style="@style/Text.Medium"
+                android:textStyle="bold"
+                tools:text="6:00am"
+                android:padding="@dimen/text_padding"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Text.Small"
+                android:text="@string/pressure"
+                android:padding="@dimen/text_padding" />
+
+            <TextView
+                android:id="@+id/weather_pressure"
+                style="@style/Text.Medium"
+                android:textStyle="bold"
+                tools:text="6:00am"
+                android:padding="@dimen/text_padding"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Text.Small"
+                android:text="@string/humidity"
+                android:padding="@dimen/text_padding" />
+
+            <TextView
+                android:id="@+id/weather_humidity"
+                style="@style/Text.Medium"
+                android:textStyle="bold"
+                tools:text="6:00am"
+                android:padding="@dimen/text_padding"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
